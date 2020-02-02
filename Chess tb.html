@@ -1,0 +1,154 @@
+<!Doctype html>
+<html>
+	<head>
+	<meta charset ="UTF-8">
+	<title>Chess</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<style>
+		body{
+			background-image: url("./imgs/back.jfif");
+		}
+		.chess{
+			border:4px solid;
+			width:650px;
+			height:650px;
+			border-collapse:collapse;
+			font-size:20px;
+			}
+			
+		table tr td.grey{
+			background-color:rgb(177, 174, 174);
+			/* background-color:rgb(255, 174, 174); */
+			}
+		table tr td.white{
+			background-color:rgb(235, 235, 235);
+			}
+		
+		table tr td{
+			text-align:center;
+			width:30px;
+			height:30px;
+			}
+			
+	</style>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class= "col mt-4">
+					<table class = "chess">
+						<tr>
+							<td class = "white" id="11" value=0>&#9820;</td>
+							<td class = "grey" id="12" value=0>&#9822;</td>     
+							<td class = "white" id="13" value=0>&#9821;</td>
+							<td class = "grey" id="14" value=0>&#9818;</td>
+							<td class = "white" id="15" value=0>&#9819;</td>
+							<td class = "grey" id="16" value=0>&#9821;</td>
+							<td class = "white" id="17" value=0>&#9822;</td>
+							<td class = "grey" id="18" value=0>&#9820;</td>
+						</tr>
+					
+						<tr>
+							<td class = "grey" id="21" value=0>&#9823;</td>
+							<td class = "white" id="22" value=0>&#9823;</td>
+							<td class = "grey" id="23" value=0>&#9823;</td>
+							<td class = "white" id="24" value=0>&#9823;</td>
+							<td class = "grey" id="25" value=0>&#9823;</td>
+							<td class = "white" id="26" value=0>&#9823;</td>
+							<td class = "grey" id="27" value=0>&#9823;</td>
+							<td class = "white"id="28" value=0>&#9823;</td>
+						</tr>
+						
+						<tr>
+							<td class = "white" id="31" value=0> </td>
+							<td class = "grey" id="32" value=0></td>
+							<td class = "white" id="33" value=0></td>
+							<td class = "grey" id="34" value=0></td>
+							<td class = "white" id="35" value=0></td>
+							<td class = "grey" id="36" value=0></td>
+							<td class = "white" id="37" value=0></td>
+							<td class = "grey" id="38" value=0></td>
+						</tr>
+					
+						<tr>
+							<td class = "grey" id="41" value=0></td>
+							<td class = "white" id="42" value=0></td>
+							<td class = "grey" id="43" value=0></td>
+							<td class = "white" id="44" value=0></td>
+							<td class = "grey" id="45" value=0></td>
+							<td class = "white" id="46" value=0></td>
+							<td class = "grey" id="47" value=0></td>
+							<td class = "white" id="48" value=0></td>
+						</tr>
+					
+						<tr>
+							<td class = "white" id="51" value=0></td>
+							<td class = "grey" id="52" value=0></td>
+							<td class = "white" id="53" value=0></td>
+							<td class = "grey" id="54" value=0></td>
+							<td class = "white" id="55" value=0></td>
+							<td class = "grey" id="56" value=0></td>
+							<td class = "white" id="57" value=0></td>
+							<td class = "grey" id="58" value=0></td>
+						</tr>
+					
+						<tr>
+							<td class = "grey" id="61" value=0></td>
+							<td class = "white" id="62"value=0></td>
+							<td class = "grey" id="63" value=0></td>
+							<td class = "white" id="64" value=0></td>
+							<td class = "grey" id="65" value=0></td>
+							<td class = "white" id="66" value=0></td>
+							<td class = "grey" id="67" value=0></td>
+							<td class = "white" id="68" value=0></td>
+						</tr>
+					
+						<tr>
+							<td class = "white" id="71" value=0>&#9817;</td>
+							<td class = "grey" id="72" value=0>&#9817;</td>
+							<td class = "white" id="73" value=0>&#9817;</td>
+							<td class = "grey" id="74" value=0>&#9817;</td>
+							<td class = "white" id="75" value=0>&#9817;</td>
+							<td class = "grey" id="76" value=0>&#9817;</td>
+							<td class = "white" id="77" value=0>&#9817;</td>
+							<td class = "grey" id="78" value=0>&#9817;</td>
+						</tr>
+					
+						<tr>
+							<td class = "grey" id="81" value=0>&#9814;</td>
+							<td class = "white" id="82" value=0>&#9816;</td>
+							<td class = "grey" id="83" value=0>&#9815;</td>
+							<td class = "white" id="84" value=0>&#9812;</td>
+							<td class = "grey" id="85" value=0>&#9813;</td>
+							<td class = "white"id="86" value=0>&#9815;</td>
+							<td class = "grey" id="87" value=0>&#9816;</td>
+							<td class = "white" id="88" value=0>&#9814;</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="col mt-4" id="chess">
+
+					<div class="alert alert-info" role="alert">
+						<h4 class="alert-heading"> ABOUT CHESS </h4>
+						<p>
+							A chessboard is the type of gameboard used for the game of chess, on which the chess pawns and pieces are placed. A chessboard is usually square in shape, with an alternating pattern of squares in two colours. Traditionally wooden boards are made of unstained light and dark brown woods. To reduce cost, many boards are made with veneers of more expensive woods glued to an inner piece of plywood or chipboard. A variety of colours combinations are used for plastic, vinyl, and silicone boards. Common dark-light combinations are black and white, as well as brown, green or blue with buff or cream. Materials vary widely; while wooden boards are generally used in high-level games; vinyl, plastic, and cardboard are common for less important tournaments and matches and for home use. Decorative glass and marble boards are rarely permitted for games conducted by national or international chess federations. When they are permitted, they must meet various criteria (see the text on FIDE regulations below)
+						</p>
+						<hr>
+						<image src="./imgs/chess.jpg">
+					  </div>
+
+				</div>	
+
+			</div>
+
+			</div>
+		</div>
+	
+		<!-- <script src="chess.js">
+
+		</script> -->
+		<script src="chess logics.js"> </script>
+
+	</body>	
+</html>					
+						
